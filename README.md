@@ -1,5 +1,5 @@
 # Kiosk-IC
-System kiosku PKP InterCity do współpracy z Raspberry Pi
+System kiosku PKP Intercity do współpracy z Raspberry Pi
 
 Jest to prosty system kiosku z aktualnymi informacjami kolejowymi do podłączenia pod Raspberry Pi.
 
