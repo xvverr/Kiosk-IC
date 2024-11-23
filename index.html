@@ -5,6 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiosk IC</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.status-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.status-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.status-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.status-card h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.status-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.status-card .on-time {
+    color: green;
+    font-weight: bold;
+}
+
+.status-card .delayed {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-card .cancelled {
+    color: red;
+    font-weight: bold;
+}
+
+.status-card span {
+    font-size: 18px;
+}
+    </style>
 </head>
 <body>
     <div class="container">
