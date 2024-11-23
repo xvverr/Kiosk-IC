@@ -65,6 +65,11 @@ header h1 {
 }
 
 .status-card .delayed {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-card .cancelled {
     color: red;
     font-weight: bold;
 }
